@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+<body>
+    <h1>Atividade 3 (Aula 1)</h1>
+    <button onclick="botCalcular()">Calcular troco</button>
+
+    <script>
+        function botCalcular(){
+            let nome = prompt("Qual é o nome do Produto");
+            let valProduto = prompt("Qual é o valor do Produto");
+            let valFornecido = prompt("Qual é valor dado para pagar o Produto");
+            
+            let troco = (valFornecido - valProduto);
+    
+            window.alert(`O Produto comprado é ${nome}`);
+            window.alert(`O valor do produto é R$${valProduto}`);
+            window.alert(`O valor fornecido é R$${valFornecido}`);
+            window.alert(`O valor do troco é R$${troco}`);
+        }
+    </script>
+    
+</body>
+</html>
